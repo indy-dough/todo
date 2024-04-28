@@ -1,0 +1,12 @@
+.button {
+  @apply text-sm border rounded-md px-4 py-1.5 hover:shadow-md shadow-slate-700/50;
+  @apply border-slate-400 bg-slate-100 active:bg-slate-200 hover:bg-slate-200/70 text-slate-700;
+
+  &.pressed {
+    @apply bg-slate-200;
+  }
+
+  &.secondary {
+    @apply border-transparent bg-white active:bg-slate-100 hover:bg-slate-100/70;
+  }
+}

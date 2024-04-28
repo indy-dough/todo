@@ -1,0 +1,7 @@
+.button {
+  @apply text-sm border border-slate-400 outline-none bg-slate-100 active:bg-slate-200 hover:bg-slate-200/70 text-slate-700 rounded-md p-2 hover:shadow-md shadow-slate-700/50;
+
+  &.pressed {
+    @apply bg-slate-200;
+  }
+}
