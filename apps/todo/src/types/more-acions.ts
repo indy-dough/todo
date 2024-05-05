@@ -14,5 +14,5 @@ export type MoreActionsSeparator = { separator: boolean };
 export function isSeparator(
   item: MoreActionsItem,
 ): item is MoreActionsSeparator {
-  return item.hasOwnProperty('separator');
+  return Object.prototype.hasOwnProperty.call(item, 'separator');
 }

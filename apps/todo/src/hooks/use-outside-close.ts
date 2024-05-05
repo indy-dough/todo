@@ -33,5 +33,5 @@ export default function useOutsideClose(
       document.removeEventListener('mousedown', onMouseDown);
       document.removeEventListener('keydown', onKeyDown);
     };
-  }, [options?.disabled, onClose]);
+  }, [ref, options?.disabled, onClose]);
 }
