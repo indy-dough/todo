@@ -64,7 +64,7 @@ export default function MoreActions({
                     {item.text}
                   </button>
                 </li>
-              )
+              ),
             )}
           </ul>
         </div>

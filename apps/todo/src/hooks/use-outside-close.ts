@@ -3,7 +3,7 @@ import { RefObject, useEffect } from 'react';
 export default function useOutsideClose(
   ref: RefObject<HTMLElement>,
   onClose: () => void,
-  options?: { disabled?: boolean }
+  options?: { disabled?: boolean },
 ) {
   useEffect(() => {
     if (options?.disabled) {

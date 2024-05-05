@@ -27,7 +27,7 @@ export default memo(function Item({ task, provided, active }: ItemProps) {
   const [focus, setFocus] = useState(false);
   const isActive = useMemo(
     () => active || show || focus,
-    [active, show, focus]
+    [active, show, focus],
   );
 
   const completeTask = useTasksStore((state) => state.completeTask);

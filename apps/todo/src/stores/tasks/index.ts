@@ -62,22 +62,22 @@ export const useTasksStore = create<TasksStore>((set, get) => ({
   },
   completeTask: (id) => {
     tasks = tasks.map((item) =>
-      item.id === id ? { ...item, completed: !item.completed } : item
+      item.id === id ? { ...item, completed: !item.completed } : item,
     );
     set({ tasks: filterTasks(tasks, get().filter) });
   },
   completeAllTasks: () => {
     tasks = tasks.map((item) =>
-      !item.completed ? { ...item, completed: true } : item
+      !item.completed ? { ...item, completed: true } : item,
     );
     set({ tasks: filterTasks(tasks, get().filter) });
   },
   moveTask: (sourceTask, destinationTask) => {
     const originalSourceIndex = tasks.findIndex(
-      (task) => task.id === sourceTask.id
+      (task) => task.id === sourceTask.id,
     );
     const originalDestinationIndex = tasks.findIndex(
-      (task) => task.id === destinationTask.id
+      (task) => task.id === destinationTask.id,
     );
 
     tasks.splice(originalSourceIndex, 1);

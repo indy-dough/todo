@@ -12,7 +12,7 @@ export type MoreActionsButton = {
 export type MoreActionsSeparator = { separator: boolean };
 
 export function isSeparator(
-  item: MoreActionsItem
+  item: MoreActionsItem,
 ): item is MoreActionsSeparator {
   return item.hasOwnProperty('separator');
 }
