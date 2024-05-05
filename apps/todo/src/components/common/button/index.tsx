@@ -11,9 +11,9 @@ export default function Button({ pressed, secondary, ...props }: ButtonProps) {
   return (
     <button
       {...props}
-      className={`${styles.button} ${pressed ? styles.pressed : ''} ${
-        secondary ? styles.secondary : ''
-      } ${props.className || ''}`}
+      data-pressed={pressed}
+      data-theme={secondary ? 'secondary' : 'default'}
+      className={`${styles.button} ${props.className || ''}`}
     />
   );
 }
