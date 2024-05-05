@@ -6,7 +6,7 @@ import styles from './style.module.scss';
 
 export default function RootRoute() {
   return (
-    <div>
+    <div className="text-zinc-950">
       <div className="sticky top-0 bg-white py-4 z-20">
         <div className={`${styles.container} mx-auto`}>
           <AddTasks />

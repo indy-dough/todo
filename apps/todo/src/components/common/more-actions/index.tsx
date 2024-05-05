@@ -42,17 +42,17 @@ export default function MoreActions({
       <DotsThree weight="bold" className="cursor-pointer" onClick={onToggle} />
 
       {isActive && (
-        <div className="absolute top-full right-0 bg-white border border-slate-400/50 py-1 whitespace-nowrap text-sm rounded-sm">
+        <div className="absolute top-full right-0 bg-white border border-zinc-200 py-1 whitespace-nowrap text-sm rounded-md">
           <ul>
             {items.map((item, index) =>
               isSeparator(item) ? (
                 <li key={index}>
-                  <hr className="border-slate-400/50 my-1" />
+                  <hr className="border-zinc-200 my-1" />
                 </li>
               ) : (
                 <li key={index}>
                   <button
-                    className={`py-2 px-4 hover:bg-slate-100 w-full text-left flex items-center gap-2 ${
+                    className={`py-2 px-4 hover:bg-zinc-100 w-full text-left flex items-center gap-2 ${
                       item.destructive ? 'text-red-500' : ''
                     }`}
                     onClick={() => {

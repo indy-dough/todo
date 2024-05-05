@@ -61,9 +61,9 @@ export default memo(function Item({ task, provided, active }: ItemProps) {
       ref={provided.innerRef}
       {...provided.draggableProps}
       style={provided.draggableProps.style}
-      className={`group flex items-center gap-2 p-2 border ${
-        isActive ? 'border-slate-400/50 bg-white' : 'border-transparent'
-      } hover:border-slate-400/50 rounded-md`}
+      className={`group flex items-center gap-2 p-2 border bg-white ${
+        isActive ? 'border-zinc-200' : 'border-transparent'
+      } hover:border-zinc-200 rounded-md`}
     >
       <div
         className={isActive ? 'visible' : 'invisible group-hover:visible'}
@@ -78,7 +78,7 @@ export default memo(function Item({ task, provided, active }: ItemProps) {
       <div className="grow">
         <input
           value={task.title}
-          className="w-full focus:bg-slate-100 outline-none py-1 px-2 rounded-sm"
+          className="w-full focus:bg-zinc-100 outline-none py-1 px-2 rounded-sm"
           onChange={(e) => updateTask(task.id, e.target.value)}
           onFocus={() => setFocus(true)}
           onBlur={() => setFocus(false)}

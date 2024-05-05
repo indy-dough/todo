@@ -7,7 +7,7 @@ export default function Input(props: InputProps) {
     <input
       type="text"
       {...props}
-      className={`w-full border border-slate-400 rounded-md px-2 ${
+      className={`w-full border border-zinc-200 text-zinc-950 rounded-md px-3 py-1 text-sm focus:ring-1 ring-zinc-400 outline-none ${
         props.className || ''
       }`}
     />

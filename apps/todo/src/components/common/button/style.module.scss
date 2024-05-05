@@ -1,12 +1,12 @@
 .button {
-  @apply text-sm border rounded-md px-4 py-1.5 hover:shadow-md shadow-slate-700/50;
-  @apply border-slate-400 bg-slate-100 active:bg-slate-200 hover:bg-slate-200/70 text-slate-700;
+  @apply text-sm rounded-md px-4 py-2 border border-zinc-900;
+  @apply bg-zinc-900 hover:bg-zinc-900/90 active:bg-zinc-900/90 text-zinc-50;
 
   &.pressed {
-    @apply bg-slate-200;
+    @apply bg-zinc-900/90;
   }
 
   &.secondary {
-    @apply border-transparent bg-white active:bg-slate-100 hover:bg-slate-100/70;
+    @apply border-zinc-200 bg-white text-zinc-900 active:bg-zinc-100 hover:bg-zinc-100;
   }
 }

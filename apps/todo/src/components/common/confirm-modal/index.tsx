@@ -28,11 +28,11 @@ export default function ConfirmModal({
   };
 
   return createPortal(
-    <div className="fixed inset-0 z-50 bg-slate-500/50 overflow-auto">
+    <div className="fixed inset-0 z-50 bg-black/80 overflow-auto">
       <div className="flex items-center justify-center flex-col min-h-screen">
         <div
           ref={ref}
-          className="bg-white w-[400px] p-7 mx-auto rounded-xl my-8"
+          className="bg-white w-[400px] p-6 mx-auto rounded-lg my-8"
         >
           <h2 className="text-lg font-medium">{title}</h2>
           <div className="flex items-center justify-end gap-2 mt-4">

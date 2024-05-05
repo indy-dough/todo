@@ -5,8 +5,12 @@ type CheckboxProps = InputHTMLAttributes<HTMLInputElement>;
 
 export default function Checkbox(props: CheckboxProps) {
   return (
-    <label className="w-6 h-6 border border-slate-400 rounded-md flex items-center justify-center cursor-pointer">
-      {props.checked && <Check size={16} />}
+    <label
+      className={`w-5 h-5 border border-black rounded-md flex items-center justify-center cursor-pointer shadow ${
+        props.checked ? 'bg-zinc-900 text-zinc-50' : ''
+      }`}
+    >
+      {props.checked && <Check size={12} weight="bold" />}
       <input {...props} type="checkbox" className="hidden" />
     </label>
   );
