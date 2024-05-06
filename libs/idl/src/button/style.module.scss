@@ -1,0 +1,11 @@
+.button {
+  @apply text-sm rounded-md px-4 py-2 border;
+
+  &[data-theme='default'] {
+    @apply border-zinc-900 bg-zinc-900 hover:bg-zinc-900/90 active:bg-zinc-900/90 focus:bg-zinc-900/90 data-[pressed=true]:bg-zinc-900/90 text-zinc-50;
+  }
+
+  &[data-theme='secondary'] {
+    @apply border-zinc-200 bg-white hover:bg-zinc-100 active:bg-zinc-100 focus:bg-zinc-100 data-[pressed=true]:bg-zinc-100 text-zinc-900;
+  }
+}

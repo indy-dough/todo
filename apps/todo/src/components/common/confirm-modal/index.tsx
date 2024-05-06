@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { createPortal } from 'react-dom';
 
-import Button from '../button';
+import { Button } from '@todo/idl';
 
 import useOutsideClose from '../../../hooks/use-outside-close';
 

@@ -7,7 +7,7 @@ type ButtonProps = {
   secondary?: boolean;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-export default function Button({ pressed, secondary, ...props }: ButtonProps) {
+export function Button({ pressed, secondary, ...props }: ButtonProps) {
   return (
     <button
       {...props}

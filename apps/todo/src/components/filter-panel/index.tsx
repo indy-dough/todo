@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { Filter } from '../../types/filter';
 
-import Button from '../common/button';
+import { Button } from '@todo/idl';
 import IconButton from '../common/icon-button';
 import ConfirmModal from '../common/confirm-modal';
 

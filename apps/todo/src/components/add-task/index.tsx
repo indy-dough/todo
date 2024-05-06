@@ -1,7 +1,6 @@
 import { ChangeEventHandler, KeyboardEventHandler, useState } from 'react';
 
-import Button from '../common/button';
-import Input from '../common/input';
+import { Button, Input } from '@todo/idl';
 
 import { useTasksStore } from '../../stores/tasks';
 
